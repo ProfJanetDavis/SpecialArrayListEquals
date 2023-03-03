@@ -1,0 +1,5 @@
+/target/
+*.class
+src/main/.DS_Store
+.idea
+.vscode
