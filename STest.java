@@ -105,5 +105,11 @@ public class STest {
 
         assertFalse(result);
     }
+    @Test
+    public void testSpecialArrayListEquals_identity() {
+        ArrayList<Integer> a1 = new ArrayList<>(Arrays.asList(1, 2));
+        boolean result = S.specialArrayListEquals(a1, a1);
+        assertTrue(result);
+    }
 
 }

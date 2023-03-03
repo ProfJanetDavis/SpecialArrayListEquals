@@ -5,6 +5,9 @@ public class S {
      *  @return true if a1 is a permutation of a2 (same elements, but not same order)
      */
     public static boolean specialArrayListEquals(ArrayList a1, ArrayList a2) {
+        if (a1 == a2) {
+            return true;
+        }
         if (a1.size() != a2.size()) {
             return false;
         }
