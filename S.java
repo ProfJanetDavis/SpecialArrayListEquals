@@ -9,11 +9,12 @@ public class S {
         boolean result = true;
         a2 = new ArrayList(a2); // clone a2
         if (a1.size() == a2.size()) {
-            for (int i = 0; ((i < a1.size()) && (result == true)); i++) {
-                Object o = a1.get(i);
+            for (Object o : a1) {
                 result = a2.contains(o);
                 if (result) {
                     a2.remove(o);
+                } else {
+                    break;
                 }
             }
         } else {
