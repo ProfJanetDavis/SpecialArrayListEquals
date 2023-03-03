@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 
 public class S {
-    /* Returns true if a1 is a permutation of a2 (same elements, but not same order) */
+    /**
+     *  @return true if a1 is a permutation of a2 (same elements, but not same order)
+     *  Precondition: a1 and a2 contain no duplicate elements
+     */
     public static boolean specialArrayListEquals(ArrayList a1, ArrayList a2) {
         boolean result = true;
         a1 = new ArrayList(a1); // clone a1
@@ -15,6 +18,8 @@ public class S {
                     a2.remove(o);
                 }
             }
+        } else {
+            result = false;
         }
         return result;
     }
