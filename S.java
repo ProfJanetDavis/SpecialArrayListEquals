@@ -9,11 +9,10 @@ public class S {
         a2 = new ArrayList(a2); // clone a2
         if (a1.size() == a2.size()) {
             for (Object o : a1) {
-                result = a2.contains(o);
-                if (result) {
+                if (a2.contains(o)) {
                     a2.remove(o);
                 } else {
-                    break;
+                    return false;
                 }
             }
         } else {
