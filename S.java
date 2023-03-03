@@ -14,7 +14,6 @@ public class S {
                 Object o = a1.get(i);
                 result = a2.contains(o);
                 if (result) {
-                    a1.remove(o);
                     a2.remove(o);
                 }
             }

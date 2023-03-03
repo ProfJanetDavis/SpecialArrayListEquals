@@ -97,4 +97,14 @@ public class STest {
         assertFalse(result);
     }
 
+    @Test
+    public void testSpecialArrayListEquals_testsEveryElement() {
+        ArrayList<Integer> a1 = new ArrayList<>(Arrays.asList(1, 2));
+        ArrayList<Integer> a2 = new ArrayList<>(Arrays.asList(1, 3));
+
+        boolean result = S.specialArrayListEquals(a1, a2);
+
+        assertFalse(result);
+    }
+
 }
