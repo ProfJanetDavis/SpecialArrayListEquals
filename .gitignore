@@ -1,4 +1,4 @@
-/target/
+/out/
 *.class
 src/main/.DS_Store
 .idea
