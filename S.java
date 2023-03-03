@@ -7,7 +7,6 @@ public class S {
      */
     public static boolean specialArrayListEquals(ArrayList a1, ArrayList a2) {
         boolean result = true;
-        a1 = new ArrayList(a1); // clone a1
         a2 = new ArrayList(a2); // clone a2
         if (a1.size() == a2.size()) {
             for (int i = 0; ((i < a1.size()) && (result == true)); i++) {
