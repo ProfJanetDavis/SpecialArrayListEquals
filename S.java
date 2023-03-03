@@ -5,7 +5,6 @@ public class S {
      *  @return true if a1 is a permutation of a2 (same elements, but not same order)
      */
     public static boolean specialArrayListEquals(ArrayList a1, ArrayList a2) {
-        boolean result = true;
         a2 = new ArrayList(a2); // clone a2
         if (a1.size() == a2.size()) {
             for (Object o : a1) {
@@ -16,8 +15,8 @@ public class S {
                 }
             }
         } else {
-            result = false;
+            return false;
         }
-        return result;
+        return true;
     }
 }
